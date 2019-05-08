@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FlexCel, Version=6.26.0.0, Culture=neutral, PublicKeyToken=cb8f6080e6d5a4d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\net46\FlexCel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +52,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Templates\report.template.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\net45\es\FlexCel.resources.dll" />
+    <Content Include="lib\net45\FlexCel.AspNet.dll" />
+    <Content Include="lib\net45\FlexCel.AspNet.xml" />
+    <Content Include="lib\net45\FlexCel.dll" />
+    <Content Include="lib\net45\FlexCel.xml" />
+    <Content Include="lib\net45\FlexCelWinforms.dll" />
+    <Content Include="lib\net45\FlexCelWinforms.xml" />
+    <Content Include="lib\net46\es\FlexCel.resources.dll" />
+    <Content Include="lib\net46\FlexCel.AspNet.dll" />
+    <Content Include="lib\net46\FlexCel.AspNet.xml" />
+    <Content Include="lib\net46\FlexCel.dll" />
+    <Content Include="lib\net46\FlexCel.xml" />
+    <Content Include="lib\net46\FlexCelWinforms.dll" />
+    <Content Include="lib\net46\FlexCelWinforms.xml" />
+    <Content Include="lib\net47\es\FlexCel.resources.dll" />
+    <Content Include="lib\net47\FlexCel.AspNet.dll" />
+    <Content Include="lib\net47\FlexCel.AspNet.xml" />
+    <Content Include="lib\net47\FlexCel.dll" />
+    <Content Include="lib\net47\FlexCel.xml" />
+    <Content Include="lib\net47\FlexCelWinforms.dll" />
+    <Content Include="lib\net47\FlexCelWinforms.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
